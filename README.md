@@ -1,2 +1,2 @@
-# Advanced C#
+# AdvancedCSharp
 Advanced C# Homework and Practice
