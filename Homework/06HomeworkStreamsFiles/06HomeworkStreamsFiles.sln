@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1OddLines", "Problem1OddLines\Problem1OddLines.csproj", "{9BDAAF14-BCD2-47C4-92F9-BA95685E2AAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2LineNumbers", "Problem2LineNumbers\Problem2LineNumbers.csproj", "{77D0D06A-8CFD-4F27-BAD7-03F00AE02AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem3WordCount", "Problem3WordCount\Problem3WordCount.csproj", "{9CC09518-9F1E-4B57-AE7C-AB977A9C58B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem4CopyBinaryFile", "Problem4CopyBinaryFile\Problem4CopyBinaryFile.csproj", "{6E663CAF-A0E8-453B-B44C-1C3DD0F2A25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem5SlicingFile", "Problem5SlicingFile\Problem5SlicingFile.csproj", "{D444B2DD-1F2D-450B-940F-D645943E4C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem6ZippingSliced", "Problem6ZippingSliced Files\Problem6ZippingSliced.csproj", "{1C93E16B-8B97-4506-AA09-D38564DB7291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem7DirectoryTraversal", "Problem7DirectoryTraversal\Problem7DirectoryTraversal.csproj", "{0ED97E86-C8B4-4646-9545-D43DC8D4CF71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BDAAF14-BCD2-47C4-92F9-BA95685E2AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDAAF14-BCD2-47C4-92F9-BA95685E2AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDAAF14-BCD2-47C4-92F9-BA95685E2AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDAAF14-BCD2-47C4-92F9-BA95685E2AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D0D06A-8CFD-4F27-BAD7-03F00AE02AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D0D06A-8CFD-4F27-BAD7-03F00AE02AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D0D06A-8CFD-4F27-BAD7-03F00AE02AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D0D06A-8CFD-4F27-BAD7-03F00AE02AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC09518-9F1E-4B57-AE7C-AB977A9C58B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC09518-9F1E-4B57-AE7C-AB977A9C58B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC09518-9F1E-4B57-AE7C-AB977A9C58B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC09518-9F1E-4B57-AE7C-AB977A9C58B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E663CAF-A0E8-453B-B44C-1C3DD0F2A25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E663CAF-A0E8-453B-B44C-1C3DD0F2A25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E663CAF-A0E8-453B-B44C-1C3DD0F2A25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E663CAF-A0E8-453B-B44C-1C3DD0F2A25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D444B2DD-1F2D-450B-940F-D645943E4C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D444B2DD-1F2D-450B-940F-D645943E4C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D444B2DD-1F2D-450B-940F-D645943E4C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D444B2DD-1F2D-450B-940F-D645943E4C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C93E16B-8B97-4506-AA09-D38564DB7291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C93E16B-8B97-4506-AA09-D38564DB7291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C93E16B-8B97-4506-AA09-D38564DB7291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C93E16B-8B97-4506-AA09-D38564DB7291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED97E86-C8B4-4646-9545-D43DC8D4CF71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED97E86-C8B4-4646-9545-D43DC8D4CF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED97E86-C8B4-4646-9545-D43DC8D4CF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED97E86-C8B4-4646-9545-D43DC8D4CF71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
