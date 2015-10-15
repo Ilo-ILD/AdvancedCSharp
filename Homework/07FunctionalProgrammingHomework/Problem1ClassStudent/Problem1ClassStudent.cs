@@ -162,17 +162,16 @@
             students.Add(student8);
 
             // -------- Problemes 2 - 10 ----------//
-            Console.WriteLine("Problem 2");
-            Console.WriteLine();
+            Console.WriteLine("Problem 2\n");
+
             var problem2StudentsbyGroup = students.Where(st => st.GroupNumber == 2).OrderBy(st => st.FirstName);
             foreach (Student st in problem2StudentsbyGroup)
             {
                 Console.WriteLine("First Name: {0} Group number is: {1}", st.FirstName, st.GroupNumber);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 3");
-            Console.WriteLine();
+            Console.WriteLine("\nProblem 3\n");
+
             var problem3StudentsbyFirstAndLastName =
                 students.OrderBy(st => st.FirstName).Where(st => st.FirstName.CompareTo(st.LastName) < 0);
 
@@ -181,9 +180,8 @@
                 Console.WriteLine("{0} {1}", st.FirstName, st.LastName);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 4");
-            Console.WriteLine();
+            Console.WriteLine("\nProblem 4\n");
+
             var problem4StudentsbyAge =
                 students.Where(st => st.Age >= 18 && st.Age <= 24).OrderBy(st => st.FirstName).ThenBy(st => st.LastName);
             foreach (Student st in problem4StudentsbyAge)
@@ -191,9 +189,8 @@
                 Console.WriteLine("First Name: {0} Last Name: {1} Age: {2}", st.FirstName, st.LastName, st.Age);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 5");
-            Console.WriteLine();
+            Console.WriteLine("\nProblem 5\n");
+
             var problem5SotStudents =
                 students.Where(st => st.Age >= 0 && st.Age <= 100)
                     .OrderByDescending(st => st.FirstName)
@@ -203,27 +200,24 @@
                 Console.WriteLine("First Name: {0} Last Name: {1} Age: {2}", st.FirstName, st.LastName, st.Age);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 6");
-            Console.WriteLine();
+            Console.WriteLine("\nProblem 6\n");
+
             var problem6StudentsByEmail = students.Where(st => st.Email.EndsWith("@abv.bg")).OrderBy(st => st.Email);
             foreach (Student st in problem6StudentsByEmail)
             {
                 Console.WriteLine("E-mail adress is: {0} ", st.Email);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 7");
-            Console.WriteLine();
-            var problem7FilterByPhone = students.Where(st => st.Phone.StartsWith("02")).OrderBy(st => st.Phone);
+            Console.WriteLine("\nProblem 7\n");
+
+            var problem7FilterByPhone = students.Where(st => st.Phone.StartsWith("02") || st.Phone.StartsWith("+3592")).OrderBy(st => st.Phone);
             foreach (Student st in problem7FilterByPhone)
             {
                 Console.WriteLine("Phone number is: {0} Last Name: {1}", st.Phone, st.LastName);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 8");
-            Console.WriteLine();
+            Console.WriteLine("\nProblem 8\n");
+
             var problem8ExcellentStudents = students.Where(st => ChechForMarks(st.Marks, 6));
 
             foreach (Student st in problem8ExcellentStudents)
@@ -237,25 +231,27 @@
                 Console.WriteLine();
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 9");
-            Console.WriteLine();
+            Console.WriteLine("\nProblem 9\n");
+
+
             var problem9WeakStudents = students.Where(st => ChechMoreMarks(st.Marks, 2));
 
+            var problem9 = students.Where(x => x.Marks.Count(y => y == 2) == 2); //s Lambda bez da si pravq method
+            
             foreach (Student st in problem9WeakStudents)
             {
                 Console.Write("First Name: {0} Last Name: {1} Marks are:", st.FirstName, st.LastName);
                 foreach (int marks in st.Marks)
                 {
-                    Console.Write("{0}", marks);
+                    Console.Write(" {0} ", marks);
                 }
 
                 Console.WriteLine();
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Problem 10");
-            Console.WriteLine();
+
+            Console.WriteLine("\nProblem 10\n"); // ili string pattern = @"(?<=\d{4})(14)";
+
             var problem10StudentEnrolled =
                 students.Where(st => st.FacultyNumber.EndsWith("14")).OrderBy(st => st.FirstName);
             foreach (Student st in problem10StudentEnrolled)
